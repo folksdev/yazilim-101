@@ -10,7 +10,7 @@ public class UcgenService {
         return ucgen.getA() > 0 && ucgen.getB() > 0 && ucgen.getC() > 0;
     }
 
-    public static int alanHesapla(Ucgen ucgen, int h){
+    public int alanHesapla(Ucgen ucgen, int h){
         return (ucgen.getA() * h) / 2;
     }
 
