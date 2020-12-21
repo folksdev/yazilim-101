@@ -1,6 +1,6 @@
 package workshop.oop.animal;
 
-public class Dog extends Animal{
+public class Dog extends Animal implements AnimalInterface{
 
     public Dog(String name) {
         super(name);
@@ -15,7 +15,13 @@ public class Dog extends Animal{
         System.out.println(yemek + " Feeding");
     }
 
+    @Override
     public void makeANoice(){
         bark();
+    }
+
+    @Override
+    public void sesCikar(String hayvanIsmi) {
+        System.out.println("hav hav hav");
     }
 }

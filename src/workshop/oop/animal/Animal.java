@@ -1,7 +1,6 @@
 package workshop.oop.animal;
 
-
-public class Animal {
+public abstract class Animal {
 
     private String name;
 
@@ -24,13 +23,13 @@ public class Animal {
                 '}';
     }
 
-    public void eat(String yemek){
-        System.out.println("Feeding");
+    public void nefesAl(){
+        System.out.println("nefes aldım");
     }
 
-    public void makeANoice(){
-        System.out.println("Noice");
-    }
+    abstract void eat(String yemek);
+
+    abstract void makeANoice();
 
     public static class SubAnimal{
         public void a(){
