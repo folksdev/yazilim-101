@@ -1,33 +1,38 @@
 package workshop.oop.animal;
 
-public class Cat extends Animal implements AnimalInterface{
+public class Cat{
 
-    private int age;
-    public Cat(String name, int age) {
-        super(name);
-        this.age = age;
+    private String name;
+
+    public String sayHello(){
+        return "Hello Peeps, my name is : " + name.toLowerCase();
     }
 
-    public int getAge(){
-        return this.age;
+    public Cat(String name, int age) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void meow(){
         System.out.println("Miyaaaav!");
     }
 
-    @Override
     public void eat(String yemek){
         meow();
         System.out.println(yemek + " Feeding");
     }
 
-    @Override
     void makeANoice() {
         meow();
     }
 
-    @Override
     public void sesCikar(String hayvanIsmi) {
         System.out.println("miyav miyav");
     }

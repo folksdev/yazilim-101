@@ -19,9 +19,9 @@ public class AnimalMain {
         dog.eat("kemik");
 
 
-        Animal cat1 = new Cat("pamuk",2);
+        //Animal cat1 = new Cat("pamuk",2);
 
-        System.out.println(((Cat)cat1).getAge());
+        //System.out.println(((Cat)cat1).getAge());
 
         Animal dog1 = new Dog("boncuk");
         System.out.println(((Dog)dog1));

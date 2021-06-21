@@ -1,0 +1,15 @@
+version: '2.4'
+
+
+services:
+
+  db-mysql:
+    image: mysql:8.0
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: "123456"
+      MYSQL_PASSWORD: "123456"
+      MYSQL_USER: "admin"
+      MYSQL_DATABASE: "subsdb"
